@@ -16,16 +16,24 @@
 body {
   background-color: var(--blue);
   padding-top: 3rem;
+  font-weight: bold;
 }
 
-#container,
-#user {
+#searchBar,
+#userSection {
   width: 40rem;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
+.avatar {
+  transition: transform 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
 .info {
   background-color: rgba(240, 248, 255, 0.283);
   padding: 1rem;
@@ -33,12 +41,12 @@ body {
   margin-top: 1.5rem;
 }
 
-input,
+#input,
 #searchBtn,
 #clearBtn {
   font-size: large;
-  font-weight: bold;
   border-radius: 0.5rem;
+  font-weight: bold;
 }
 
 input {
@@ -100,6 +108,25 @@ h3 {
 }
 p {
   font-size: 2rem;
+}
+
+ul {
+  text-align: center;
+  font-size: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--coral);
+}
+
+a:hover {
+  color: brown;
 }
 
 .flip-horizontal-bottom {

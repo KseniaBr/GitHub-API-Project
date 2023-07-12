@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#glowingLetters span {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  animation: lighting 1000ms alternate infinite ease;
+  text-shadow: 0.2rem 0.2rem rgba(81, 105, 113, 0.689);
+}
+@keyframes lighting {
+  0%,
+  85% {
+    color: black;
+  }
+  100% {
+    color: rgba(135, 206, 250, 0.831);
+  }
+}
+#glowingLetters span:nth-child(1) {
+  animation-delay: 200ms;
+}
+#glowingLetters span:nth-child(2) {
+  animation-delay: 400ms;
+}
+#glowingLetters span:nth-child(3) {
+  animation-delay: 600ms;
+}
+#glowingLetters span:nth-child(4) {
+  animation-delay: 800ms;
+}
+#glowingLetters span:nth-child(5) {
+  animation-delay: 1s;
+}
+#glowingLetters span:nth-child(6) {
+  animation-delay: 1.2s;
+}
+#glowingLetters span:nth-child(7) {
+  animation-delay: 1.4s;
+}
+#glowingLetters span:nth-child(8) {
+  animation-delay: 1.6s;
+}
+#glowingLetters span:nth-child(9) {
+  animation-delay: 1.8s;
+}
+#glowingLetters span:nth-child(10) {
+  animation-delay: 2s;
+}
+
+#startBtn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(135, 206, 250, 0.83);
+  box-shadow: 0.3rem 0.3rem rgba(81, 105, 113, 0.689);
+}
+
+#startBtn:hover {
+  background-color: rgba(135, 179, 194, 0.783);
+  color: whitesmoke;
+}
